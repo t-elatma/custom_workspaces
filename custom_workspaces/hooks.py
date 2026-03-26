@@ -25,3 +25,7 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+
+after_migrate = "custom_workspaces.install.after_migrate"
+after_install = "custom_workspaces.install.after_migrate"
+before_uninstall = "custom_workspaces.install.before_uninstall"
