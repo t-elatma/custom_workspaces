@@ -6,6 +6,7 @@ def create_workspaces():
         {
             "doctype": "Workspace",
             "name": "Manager Workspace",
+            "label": "Manager Workspace",
             "title": "Manager Workspace",
             "icon": "file-manager",
             "public": 1,
@@ -19,6 +20,7 @@ def create_workspaces():
         {
             "doctype": "Workspace",
             "name": "Sales Workspace",
+            "label": "Sales Workspace",
             "title": "Sales Workspace",
             "icon": "rupee",
             "public": 1,
@@ -32,6 +34,7 @@ def create_workspaces():
         {
             "doctype": "Workspace",
             "name": "Operations Workspace",
+            "label": "Operations Workspace",
             "title": "Operations Workspace",
             "icon": "truck",
             "public": 1,
