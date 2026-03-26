@@ -37,16 +37,7 @@ def create_dependencies():
             "filters_json": "{}"
         }).insert(ignore_permissions=True)
 
-    # 4. Module Onboarding
-    if not frappe.db.exists("Module Onboarding", "Custom App Onboarding"):
-        frappe.get_doc({
-            "doctype": "Module Onboarding",
-            "name": "Custom App Onboarding",
-            "title": "Welcome to Custom App",
-            "subtitle": "Let's get started",
-            "success_message": "All done!",
-            "is_complete": 0
-        }).insert(ignore_permissions=True)
+    # Module Onboarding removed to avoid strict validation errors
 
 def create_workspaces():
     create_dependencies()
@@ -117,7 +108,6 @@ def create_workspaces():
             ],
             "content": json.dumps([
                 {"id": "sls_h1", "type": "header", "data": {"text": "<span class=\"h4\"><b>Sales Command Center</b></span>", "col": 12}},
-                {"id": "sls_o1", "type": "onboarding", "data": {"onboarding_name": "Custom App Onboarding", "col": 12}},
                 {"id": "sls_sc", "type": "shortcut", "data": {"shortcut_name": "New Sales Order", "col": 4}},
                 {"id": "sls_cd", "type": "card", "data": {"card_name": "Sales Data", "col": 4}},
                 {"id": "sls_ql", "type": "quick_list", "data": {"list_name": "Recent Customers", "col": 12}}
@@ -177,8 +167,7 @@ def before_uninstall():
     docs_to_delete = [
         ("Custom HTML Block", "Workspace Guide"),
         ("Number Card", "Total Users"),
-        ("Dashboard Chart", "Users Chart"),
-        ("Module Onboarding", "Custom App Onboarding")
+        ("Dashboard Chart", "Users Chart")
     ]
     for dt, dn in docs_to_delete:
         if frappe.db.exists(dt, dn):
