@@ -19,7 +19,6 @@ def create_dependencies():
             "label": "Total Users",
             "document_type": "User",
             "function": "Count",
-            "is_standard": 1,
             "show_percentage_stats": 0
         }).insert(ignore_permissions=True)
 
@@ -33,8 +32,7 @@ def create_dependencies():
             "document_type": "User",
             "based_on": "creation",
             "time_interval": "Monthly",
-            "timeseries": 1,
-            "is_standard": 1
+            "timeseries": 1
         }).insert(ignore_permissions=True)
 
     # 4. Module Onboarding
