@@ -8,7 +8,7 @@ def create_dependencies():
             "doctype": "Custom HTML Block",
             "name": "Workspace Guide",
             "private": 0,
-            "html": "<div style='padding: 20px; background: var(--bg-light-gray); border-radius: 8px;'><h3 class='text-muted'>🚀 Advanced Capabilities Activated</h3><p>Enjoy widgets, charts, and more generated directly via python.</p></div>"
+            "html": "<div style='position: relative; overflow: hidden; padding: 40px; border-radius: 20px; background: linear-gradient(135deg, #4f46e5 0%, #ec4899 100%); color: white; box-shadow: 0 10px 25px -5px rgba(236, 72, 153, 0.4);'><div style='position: relative; z-index: 2;'><h2 style='font-weight: 800; margin-bottom: 10px; font-size: 28px; line-height: 1.2;'>✨ Premium Workspace Experience</h2><p style='font-size: 16px; opacity: 0.9; max-width: 600px; margin: 0;'>This workspace employs advanced custom HTML wrappers and injected desk CSS to deliver a uniquely elegant and colorful design.</p></div><div style='position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(20px);'></div><div style='position: absolute; bottom: -80px; left: 20%; width: 250px; height: 250px; background: rgba(255,255,255,0.15); border-radius: 50%; filter: blur(30px);'></div></div>"
         }).insert(ignore_permissions=True)
 
     # 2. Number Card

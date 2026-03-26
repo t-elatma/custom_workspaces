@@ -11,7 +11,7 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/custom_app/css/custom_app.css"
+app_include_css = "/assets/custom_workspaces/css/workspace.css"
 # app_include_js = "/assets/custom_app/js/custom_app.js"
 
 # Document Events
