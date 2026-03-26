@@ -32,7 +32,8 @@ def create_dependencies():
             "document_type": "User",
             "based_on": "creation",
             "time_interval": "Monthly",
-            "timeseries": 1
+            "timeseries": 1,
+            "filters_json": "{}"
         }).insert(ignore_permissions=True)
 
     # 4. Module Onboarding
